@@ -87,4 +87,22 @@
             margin-top: 20px;
         }
     }
+
+    .carousel {
+        padding-top: 25px;
+        &__inner {
+            width: 100%;
+            img {
+                width: 100%;
+            }
+        }
+        .slick-dots {
+            width: 80%;
+            padding: 0;
+            margin: 0 auto;
+            margin-top: 10px;
+            display: flex;
+            justify-content: space-between;
+        }
+    }
 }
