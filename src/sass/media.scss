@@ -69,4 +69,22 @@
             }
         }
     }
+
+    .consultation {
+        padding-top: 70px;
+        .title {
+            font-size: 25px;
+            line-height: 30px;
+            text-align: center;
+        }
+            &__descr {
+                margin-top: 20px;
+                width: 220px;
+                line-height: 25px;
+                font-size: 20px;        
+            }
+        .feed-form {
+            margin-top: 20px;
+        }
+    }
 }
