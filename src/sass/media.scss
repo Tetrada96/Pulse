@@ -9,6 +9,7 @@
         }
     }
     .promo {
+        min-height: 444px;
         padding-bottom: 50px;
         &__wrapper {
             margin-top: 40px;
@@ -54,6 +55,7 @@
             flex-direction: column;
             margin-top: 15px;
             width: 100%;
+            padding: 0 15px;
         }
         &__icon {
             width: 90%;
@@ -71,20 +73,23 @@
     }
 
     .consultation {
-        padding-top: 70px;
+        padding-top: 60px;
         .title {
             font-size: 25px;
             line-height: 30px;
             text-align: center;
         }
             &__descr {
-                margin-top: 20px;
+                margin-top: 55px;
                 width: 220px;
                 line-height: 25px;
-                font-size: 20px;        
+                font-size: 20px; 
+                margin-left: 5px;       
             }
         .feed-form {
             margin-top: 20px;
+            margin-left: 5px;
+            width: 280px;
         }
     }
 
@@ -97,12 +102,70 @@
             }
         }
         .slick-dots {
-            width: 80%;
+            list-style-type: none;
+            width: 50%;
             padding: 0;
             margin: 0 auto;
             margin-top: 10px;
             display: flex;
             justify-content: space-between;
+            li {
+                width: 50px;
+                text-align: center;
+                button {
+                    font-size: 0;
+                    height: 12px;
+                    border: none;
+                    background-color: black;
+                    border-radius: 100%;
+                }
+            }    
+            .slick-active {
+                button {
+                    background-color: red;
+                }
+                    
+            }
+            
+            
         }
+    }
+    .catalog {
+        padding-bottom: 50px;
+        &__tabs {
+            flex-direction: column;
+            align-items: center;
+            margin-top: 40px;
+        }
+        &__tab {
+            margin-bottom: 15px;
+        }
+        &__content {
+            margin-top: 15px;
+        }
+    }
+
+    .rewiew {
+        &__wrapper {
+            width: 100%;
+        }
+        &__title {
+            margin-bottom: 30px;
+        }
+        .rewiew-personal {
+            display: block;
+            &__img {
+                display: block;
+                margin: 0 auto;
+                width: 100px;
+                height: 100px;
+                margin-bottom: 15px;
+            }
+            &__name, &__number, &__rewiew  {
+                text-align: center;
+            }
+
+        }
+        
     }
 }
